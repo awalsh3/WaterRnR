@@ -7,15 +7,20 @@ class BookingsController < ApplicationController
     @booking = Booking.new(booking_params)
     @pool = pool.find(params[:pool_id])
     @booking.pool = @pool
-    if @booking.save 
+    if @booking.save
       redirect_to booking_path(@booking)
-    else 
+    else
       render :new
     end
   end
 
-
   def show
     @booking = booking.find(params[:id])
+  end
+
+  private
+
+  def booking_params
+    params.require(:booking).permit(:date)
   end
 end
