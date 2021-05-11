@@ -6,6 +6,7 @@ class PoolsController < ApplicationController
   end
 
   def show
+    @pool = Pool.find(params[:id])
   end
 
   def new
@@ -24,6 +25,6 @@ class PoolsController < ApplicationController
   private
 
   def pool_params
-    params.require(:pool).permit(:location, :description, :photo)
+    params.require(:pool).permit(:location, :description)
   end
 end
