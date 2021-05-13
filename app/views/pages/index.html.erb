@@ -1,0 +1,19 @@
+<div class="cards">
+   <div class="container">
+      <div class="row">
+         <% @pools.each do |product| %>
+         <div class="card">
+            <%= image_tag("picture_holder")%>
+            <strong class="card-text"><%= pool.location %></strong>
+            <a href="<%= product_path(product) %>"><%= image_tag("picture_holder")%><a>
+            <p class="card-text"><%= pool.description %></p>
+         </div>
+         <% end %>
+      </div>
+      <div class="row">
+        <div class="col-md-12">
+          <%= paginate @pools %>
+        </div>
+      </div>
+   </div>
+</div>
