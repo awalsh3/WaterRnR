@@ -1,5 +1,5 @@
 <div class="navbar navbar-expand-sm navbar-light navbar-lewagon">
-  <%= link_to "#", class: "navbar-brand" do %>
+  <%= link_to "pools#index", class: "navbar-brand" do %>
     <%= image_tag "https://res.cloudinary.com/dkgzrlgdu/image/upload/v1620925787/wave2_bcbdeu.jpg" %>
   <% end %>
 
@@ -11,16 +11,19 @@
   <div class="collapse navbar-collapse" id="navbarSupportedContent">
     <ul class="navbar-nav mr-auto">
       <li class="nav-item active">
-        <%= link_to "Home", "#", class: "nav-link" %>
+        <%= link_to "HOME", "/", class: "nav-link" %>
       </li>
       <li class="nav-item">
-        <%= link_to "Messages", "#", class: "nav-link" %>
+        <%= link_to "FIND A POOL", "/pools", class: "nav-link" %>
+      </li>
+      <li class="nav-item">
+        <%= link_to "BECOME A HOST", "/pools/new", class: "nav-link" %>
       </li>
       <li class="nav-item dropdown">
         <%= image_tag "https://kitt.lewagon.com/placeholder/users/ssaunier", class: "avatar dropdown-toggle", id: "navbarDropdown", data: { toggle: "dropdown" }, 'aria-haspopup': true, 'aria-expanded': false %>
         <div class="dropdown-menu dropdown-menu-right" aria-labelledby="navbarDropdown">
-          <%= link_to "Action", "#", class: "dropdown-item" %>
-          <%= link_to "Another action", "#", class: "dropdown-item" %>
+          <%= link_to "MY BOOKINGS", "/bookings/:id", class: "dropdown-item" %>
+          <%= link_to "FAQ", "#", class: "dropdown-item" %>
         </div>
       </li>
     </ul>
