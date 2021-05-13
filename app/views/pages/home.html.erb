@@ -1,102 +1,35 @@
-<div class="background-image">
+<div class="banner">
    <div class="container">
             <div class="row">
                 <div class="col-sm-5">
                     <div class="card border-0">
                         <div class="card-body">
-                            <h1 class="h3 mb-3">Book homes, hotels, and more on WateRnR</h1>
-                            <form>
+                            <h1 class="h3 mb-3">Book residential pools on WaterRnR</h1>
+                              <%= simple_form_for :search, url: root_path, method: :get do |f| %>
                                 <div class="form-group">
-                                    <div class="row px-3">
-                                        <label class="mb-0" for="locationInput mb-0 mt-5">WHERE</label>
-                                        <input type="email" class="form-control w-100 br0" id="locationInput" aria-describedby="locationInputHelp" placeholder="Anywhere">
-                                        <small id="locationInputHelp" class="form-text text-muted sr-only">Please type in your desired destination.</small>
-                                    </div>
+                                  <div class="row px-3">
+                                    <label class="mb-0" for="locationInput mb-0 mt-5">Location</label>
+                                    <input type="text" name="search[query]" id="search_query"class="form-control w-100 br0" id="locationInput" aria-describedby="locationInputHelp" placeholder="Anywhere">
+                                    <small id="locationInputHelp" class="form-text text-muted sr-only">Please type in your desired destination.</small>
+                                  </div>
                                 </div>
-                                <div class="row px-3">
-                                    <div class="col-sm-6 px-0">
-                                        Start Date: <input class="br0" id="startDate" />
-                                    </div>
-                                    <div class="col-sm-6 px-0 br0">
-                                        End Date: <input class="br0" id="endDate" />
-                                    </div>
-                                </div>
-
-
-                                <div class="row px-3">
-                                    <div class="col-sm-6 px-0 br0">
-                                        <div class="form-group">
-                                            <label class="mb-0 mt-3" for="exampleFormControlSelect1">ADULTS</label>
-                                            <select class="form-control" id="exampleFormControlSelect1">
-                                                <option>1 adult</option>
-                                                <option>2 adults</option>
-                                                <option>3 adults</option>
-                                                <option>4 adults</option>
-                                                <option>5 adults</option>
-                                                <option>6 adults</option>
-                                                <option>7 adults</option>
-                                                <option>8 adults</option>
-                                                <option>9 adults</option>
-                                                <option>10 adults</option>
-                                                <option>11 adults</option>
-                                                <option>12 adults</option>
-                                                <option>13 adults</option>
-                                                <option>14 adults</option>
-                                                <option>15 adults</option>
-                                                <option>16 adults</option>
-                                            </select>
-                                        </div>
-                                    </div>
-
-                                    <div class="col-sm-6 px-0 br0">
-                                        <div class="form-group">
-                                            <label class="mb-0 mt-3" for="exampleFormControlSelect2">CHILDREN</label>
-                                            <select class="form-control" id="exampleFormControlSelect2">
-                                                <option>0 children</option>
-                                                <option>1 child</option>
-                                                <option>2 children</option>
-                                                <option>3 children</option>
-                                                <option>4 children</option>
-                                                <option>5 children</option>
-                                            </select>
-                                        </div>
-                                    </div>
-                                </div>
-                            </form>
-
-                            <a href="#" class="btn btn-danger btn-block">Search</a>
+                                  <button name="button" type="submit" class="btn btn-flat">
+                                    <i class="fas fa-search"></i> Search
+                                  </button>
+                              <% end %>
                         </div>
                     </div>
-                    <div class="card my-4 p-2 small border-0">
-                        <div class="row no-gutters">
-                            <div class="col-md-7 d-flex align-items-center">
-                                <p class="my-0 px-3">Earn up to <strong>$5530/month</strong> hosting your pool in Rome</p>
-                            </div>
-                            <div class="col-md-5 border-left border-secondary">
-                                <div class="card-body">
-                                    <p class="card-text">Become a pool host <span>&gt;</span></p>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
+
                 </div>
             </div>
         </div>
     </div>
-  <div class="container-fluid container bg-secondary display-1">
-      2nd section
-  </div>
-  <div class="container-fluid container bg-success display-1">
-      3rd section
-  </div>
-  <div class="container-fluid container bg-warning display-1">
-      4th section
-  </div>
-  <div class="container-fluid container bg-danger display-1">
-      5th section
-  </div>
-  <div class="container-fluid container bg-info display-1">
-      6th section
-  </div>
 </div>
+<div class="footer">
+  <div class="footer-links">
+    <a href="#"><i class="fab fa-instagram"></i></a>
+    <a href="#"><i class="fab fa-facebook"></i></a>
+    <a href="#"><i class="fab fa-twitter"></i></a>
+  </div>
 
+</div>
