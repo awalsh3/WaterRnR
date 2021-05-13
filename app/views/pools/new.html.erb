@@ -1,0 +1,13 @@
+<div class=container>
+  <h1> Create Pool Rental </h1>
+
+  <h4> Host your own pool and make a splash with extra cash today!</h4>
+
+  <%= simple_form_for [ @pool ] do |f| %>
+  <%= f.input :location %>
+  <%= f.input :description %>
+  <%= f.input :photos, as: :file, input_html: { multiple: true } %>
+  <%= f.submit "Create", class: "btn btn-primary" %>
+
+<% end %>
+</div>
