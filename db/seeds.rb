@@ -66,63 +66,63 @@ pool1 = Pool.create!(
   description: "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. ",
   location: "Hampstead",
   user: user2,
-  photo: 'https://images.unsplash.com/photo-1576336463225-18df4bee0e38?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=967&q=80'
+  # photo: 'https://images.unsplash.com/photo-1576336463225-18df4bee0e38?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=967&q=80'
 )
 
 pool2 = Pool.create!(
   description: "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. ",
   location: "Soho",
   user: user2,
-  photo: 'https://images.unsplash.com/photo-1580794825872-339aa2de9558?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=668&q=80'
+  # photo: 'https://images.unsplash.com/photo-1580794825872-339aa2de9558?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=668&q=80'
 )
 
 pool3 = Pool.create!(
   description: "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. ",
   location: "Richmond",
   user: user2,
-  photo: 'https://images.unsplash.com/photo-1613977257365-aaae5a9817ff?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=668&q=80'
+  # photo: 'https://images.unsplash.com/photo-1613977257365-aaae5a9817ff?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=668&q=80'
 )
 
 pool4 = Pool.create!(
   description: "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. ",
   location: "Kensington",
   user: user2,
-  photo: 'https://images.unsplash.com/photo-1603034203013-d532350372c6?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=668&q=80'
+  # photo: 'https://images.unsplash.com/photo-1603034203013-d532350372c6?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=668&q=80'
 )
 
 booking1 = Booking.create!(
   user: user1,
   pool: pool1,
-  date: DateTime.strptime("04/04/2021 11:00", "%m/%d/%Y %H:%M"),
+  date: '2021-04-04 11:00:00',
   confirmed: true
 )
 
 booking2 = Booking.create!(
   user: user2,
   pool: pool2,
-  date: DateTime.strptime("12/05/2021 10:00", "%m/%d/%Y %H:%M"),
+  date: '2021-06-14 10:00:00',
   confirmed: true
 )
 
 booking3 = Booking.create!(
   user: user3,
   pool: pool3,
-  date: DateTime.strptime("14/06/2021 11:00", "%m/%d/%Y %H:%M"),
+  date: '2021-07-29 11:30:00',
   confirmed: false
 )
 
 
-review1 = Review.create!(
-  rating: 5,
-  comment: "That trip was a wonderful experience!",
-  booking_id: booking3
-)
+# review1 = Review.create!(
+#   rating: 5,
+#   comment: "That trip was a wonderful experience!",
+#   booking_id: booking3
+# )
 
-review2 = Review.create!(
-  rating: 5,
-  comment: "I'm so amazed!",
-  booking_id: booking2
-)
+# review2 = Review.create!(
+#   rating: 5,
+#   comment: "I'm so amazed!",
+#   booking_id: booking2
+# )
 
 # review3 = Review.create!(
 #   rating: 2,
