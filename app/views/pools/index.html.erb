@@ -1,0 +1,22 @@
+<section class="pools">
+  <div class="container-fluid">
+    <h3><%= @pools.count %> Pools</h3>
+    <div class="Cards">
+      <div class="Cards__grid">
+        <% @pools.each do |pool|  %>
+          <div class="grid-item">
+            <%= render 'shared/card', pool: pool %>
+          </div>
+        <% end %>
+      </div>
+      <div class="Map Cards__map">
+        <div class="Map__inner">
+          <div id="map"
+            style="width: 100%;"
+            data-markers="<%= @markers.to_json %>">
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>

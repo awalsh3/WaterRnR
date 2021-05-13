@@ -1,0 +1,50 @@
+.pools {
+  margin: 48px 0;
+}
+
+.Cards {
+  display: flex;
+
+  &__grid {
+    flex: 1;
+    display: flex;
+    flex-wrap: wrap;
+    margin: 0 -8px;
+
+    > .grid-item {
+      padding: 0 8px;
+    }
+  }
+
+  &__map {
+    display: none;
+
+    // @include media($screen-lg) {
+    //   display: block;
+    //   flex: 0 0 432px;
+    // }
+  }
+}
+
+.grid-item {
+  flex: 0 0 100%;
+
+  // @include media($screen-xs) {
+  //   flex: 0 0 calc(100% / 2);
+  // }
+
+  // @include media($screen-md) {
+  //   flex: 0 0 calc(100% / 3);
+  // }
+}
+
+.Map {
+  position: relative;
+}
+
+.Map__inner {
+  position: sticky;
+  // top: calc(#{$navbar-height} + 16px);
+  left: 0;
+  padding-left: 16px;
+}
