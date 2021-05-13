@@ -1,6 +1,27 @@
-<div class="background-image">
-  <h1>WaterRnR</h1>
-  <p>Find me in app/views/pages/home.html.erb</p>
+<div class="banner">
+   <div class="container">
+            <div class="row">
+                <div class="col-sm-5">
+                    <div class="card border-0">
+                        <div class="card-body">
+                            <h1 class="h3 mb-3">Book residential pools on WaterRnR</h1>
+                              <%= simple_form_for :search, url: root_path, method: :get do |f| %>
+                                <div class="form-group">
+                                  <div class="row px-3">
+                                    <label class="mb-0" for="locationInput mb-0 mt-5">Location</label>
+                                    <input type="text" name="search[query]" id="search_query"class="form-control w-100 br0" id="locationInput" aria-describedby="locationInputHelp" placeholder="Anywhere">
+                                    <small id="locationInputHelp" class="form-text text-muted sr-only">Please type in your desired destination.</small>
+                                  </div>
+                                </div>
+                                  <button name="button" type="submit" class="btn btn-flat">
+                                    <i class="fas fa-search"></i> Search
+                                  </button>
+                              <% end %>
+                        </div>
+                    </div>
 
+                </div>
+            </div>
+        </div>
+    </div>
 </div>
-
