@@ -1,15 +1,15 @@
-<div class="cards">
-   <div class="container">
-      <div class="row">
-         <% @pools.each do |product| %>
-         <div class="card">
-            <%= image_tag("picture_holder")%>
-            <strong class="card-text"><%= pool.location %></strong>
-            <a href="<%= product_path(product) %>"><%= image_tag("picture_holder")%><a>
+<div class="container">
+   <div class="cards">
+         <% @pools.each do |pool| %>
+         <div>
+          <strong class="card-text"><%= pool.location %></strong>
+          <% if pool.photo.attached? %>
+            <%= cl_image_tag pool.photo.key, height: 300, width: 400, crop: :fill%>
+<!--             Add an else if no picture -->
+          <% end  %>
             <p class="card-text"><%= pool.description %></p>
          </div>
          <% end %>
-      </div>
       <div class="row">
       </div>
    </div>
