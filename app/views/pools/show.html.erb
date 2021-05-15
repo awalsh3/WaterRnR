@@ -3,7 +3,8 @@
     <!-- Details box -->
     <div class="listing col-md-8">
       <div class="listing-title">
-        <p><%= @pool.location %></p>
+
+        <h3>Location: <%= @pool.location %>
       </div><br>
 
       <div class="listing-details">
@@ -12,12 +13,17 @@
             <p><strong>Highlights</strong></p>
           </div>
 
-          <div class="col-xs-9">
+          <div class="col-xs-3">
               <%= @pool.description %>
+              <br>
+              <br>
+              <p> Hosted by: <%= @pool.user.name %> </p>
           </div>
-          <%= render 'bookings/form', pool: @pool, booking: @booking %>
-
-          
+          <hr></hr>
+          <div class="col-xs-3">
+              <p> This pool is available on this day/time: </p>
+              <%= render 'bookings/form', pool: @pool, booking: @booking %>
+          </div>
         </div>
         <br><br>
       </div>

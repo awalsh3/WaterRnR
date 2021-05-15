@@ -1,2 +1,12 @@
-show.html.erb
-<%= @booking %>
+
+<div class="container-listing">
+  <br>
+  <h2><strong>Congratulations, you're now booked!</strong></h2><br>
+  <hr></hr>
+  <h3>Booking details:</h3><br>
+
+  <p> You've booked this pool the entire day on: <%= @booking.date %></p>
+  <p>Location: <%= @booking.pool.location%></p>
+  <p>Details: <%= @booking.pool.description %></p>
+  <p> Hosted by: <%= @booking.pool.user.name %>
+</div>
