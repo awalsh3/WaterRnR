@@ -3,10 +3,10 @@
       <div class="row">
          <% @pools.each do |product| %>
          <div class="card">
-            <%= image_tag("picture_holder")%>
-            <strong class="card-text"><%= pool.location %></strong>
-            <a href="<%= product_path(product) %>"><%= image_tag("picture_holder")%><a>
-            <p class="card-text"><%= pool.description %></p>
+            <%= image_tag("https://res.cloudinary.com/dkgzrlgdu/image/upload/v1621076672/adheesha-paranagama-kOYh8C_xLUQ-unsplash_wblbav.jpg")%>
+            <strong class="card-text"><%= @pool.location %></strong>
+            <a href="<%= product_path(product) %>"><%= image_tag("https://res.cloudinary.com/dkgzrlgdu/image/upload/v1621076672/adheesha-paranagama-kOYh8C_xLUQ-unsplash_wblbav.jpg")%><a>
+            <p class="card-text"><%= @pool.description %></p>
          </div>
          <% end %>
       </div>

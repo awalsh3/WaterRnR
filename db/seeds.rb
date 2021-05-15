@@ -66,14 +66,14 @@ pool1 = Pool.create!(
   description: "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. ",
   location: "Hampstead",
   user: user2,
-  # photo: 'https://images.unsplash.com/photo-1576336463225-18df4bee0e38?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=967&q=80'
+  photo: 'https://res.cloudinary.com/dkgzrlgdu/image/upload/v1621076645/joe-ciciarelli-08AJKJf75kw-unsplash_wqylq8.jpg'
 )
 
 pool2 = Pool.create!(
   description: "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. ",
   location: "Soho",
   user: user2,
-  # photo: 'https://images.unsplash.com/photo-1580794825872-339aa2de9558?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=668&q=80'
+  photo: 'https://res.cloudinary.com/dkgzrlgdu/image/upload/v1621076507/gregory-gapare-U53rV8r-6zY-unsplash_bdw2oq.jpg'
 )
 
 pool3 = Pool.create!(
