@@ -9,6 +9,24 @@
   align-items: center;
 }
 
+.container-new {
+  padding: 20px;
+  margin: 0 auto;
+  width: 80%;
+}
+
+.container-rental {
+  padding: 20px;
+  margin: 0 auto;
+  width: 80%;
+}
+
+.container-listing {
+  padding: 20px;
+  margin: 0 auto;
+  width: 80%;
+}
+
 .footer {
   background: #0D0D0E;
   display: flex;
@@ -44,11 +62,12 @@
   border-radius: 2px;
 }
 
+
 .btn-flat {
   color: white;
   padding: 8px 24px;
   border-radius: 4px;
-  background: #4EC7F1;
+  background: #4cc6ef;
   transition: background 0.3s ease;
 }
 .search-form-control {
@@ -69,7 +88,7 @@
 }
 
 .search-form-control .form-control:focus {
-  border: 1px solid #4EC7F1;
+  border: 1px solid #4cc6ef;
   outline: none !important;
   box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
 }

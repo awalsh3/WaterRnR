@@ -5,8 +5,8 @@ class ReviewsController < ApplicationController
 
   def create
     @review = Review.new(review_params)
-    @pool = pool.find(params[:pool_id])
-    @review.pool = @pool
+    @review.user = current_user
+    @review.@pool = Pool.find(params[:pool_id])
     if @review.save
       redirect_to pool_path(@pool)
     else
