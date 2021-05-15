@@ -66,13 +66,13 @@ pool1 = Pool.create!(
   description: "From summer days spent lounging by the pool to atmospheric evenings huddled around the fire pit, this luxury self-catering pool in Hampstead was designed with large family gatherings in mind.",
   location: "Hampstead",
   user: user2,
-  # photo: 'https://images.unsplash.com/photo-1576336463225-18df4bee0e38?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=967&q=80'
+  photo: 'https://images.unsplash.com/photo-1576336463225-18df4bee0e38?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=967&q=80'
 )
 pool2 = Pool.create!(
   description: "A home since the 1640s, this Grade-II listed country manor is a home where relaxation, fun and time spent together are centre-stage. Lap the indoor heated swimming pool before breakfast, warm bones in the infrared sauna and challenge friends to a game of snooker over a tipple or two. ",
   location: "Soho",
   user: user2,
-  # photo: 'https://images.unsplash.com/photo-1580794825872-339aa2de9558?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=668&q=80'
+   photo: 'https://images.unsplash.com/photo-1580794825872-339aa2de9558?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=668&q=80'
 )
 pool3 = Pool.create!(
   description: "When the moon rises, bare all to the night sky and slide into the outdoor swimming pool, floating between the shimmering reflections of the constellations. ",
