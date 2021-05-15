@@ -5,17 +5,17 @@ class BookingsController < ApplicationController
 
   def create
     @booking = Booking.new(booking_params)
-    @pool = pool.find(params[:pool_id])
-    @booking.pool = @pool
+    @booking.user = current_user
+    @booking.pool = Pool.find(params[:pool_id])
     if @booking.save
-      redirect_to booking_path(@booking)
+      redirect_to pool_booking_path(@booking.pool, @booking)
     else
-      render :new
+      redirect_to new_pool_booking_path(@pool)
     end
   end
 
   def show
-    @booking = booking.find(params[:id])
+    @booking = Booking.find(params[:id])
   end
 
   private
