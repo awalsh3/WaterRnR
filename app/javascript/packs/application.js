@@ -41,3 +41,13 @@ document.addEventListener('turbolinks:load', () => {
   revealCards();
   // initMapbox();
 });
+
+
+import $ from 'jquery';
+import 'jquery.ripples';
+document.addEventListener('turbolinks:load', () => {
+  // [...]
+  $('.banner').ripples();
+});
+
+
