@@ -11,6 +11,12 @@ body {
   background-color: #F2F2F2;
 }
 
+.pools-index img:hover{
+   box-shadow: 0 0px 55px rgba(0, 0, 0, 0.4);
+   transform: translate(0px, -20px) scale(1.03);
+   z-index: 0;
+}
+
 
 .card-text{
   height: 300;
