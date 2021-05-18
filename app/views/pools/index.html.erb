@@ -4,7 +4,8 @@
          <div>
           <strong class="card-text"><%= pool.location %></strong>
           <% if pool.photo.attached? %>
-            <%= cl_image_tag pool.photo.key, height: 300, width: 400, crop: :fill%>
+            <%= link_to cl_image_tag(pool.photo.key), pool_path(pool.id) %>
+       <!--  -->
 <!--             Add an else if no picture -->
           <% end  %>
             <p class="card-text"><%= pool.description %></p>
@@ -14,3 +15,4 @@
       </div>
    </div>
 </div>
+
