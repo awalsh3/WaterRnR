@@ -2,7 +2,7 @@
    <div class="cards">
          <% @pools.each do |pool| %>
          <div>
-          <strong class="card-text"><%= pool.location %></strong>
+          <strong class="card-text fi-text-js text-center"><%= pool.location %></strong>
           <% if pool.photo.attached? %>
             <%= link_to cl_image_tag(pool.photo.key), pool_path(pool.id) %>
        <!--  -->
@@ -10,6 +10,9 @@
           <% end  %>
             <p class="card-text"><%= pool.description %></p>
          </div>
+         <div class="fi-text">
+          <h2 class="fi-text-js text-center"><%= pool.description %></h2>
+        </div>
          <% end %>
       <div class="row">
       </div>
