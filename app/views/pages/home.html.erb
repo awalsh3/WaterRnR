@@ -1,16 +1,30 @@
-<div class="banner">
+<!-- <div class="banner">
   <div class="container">
     <div class="row">
       <div class="col-sm-5">
         <div class="card border-0">
           <div class="card-body" id="search-box">
-          <h1 class="h3 mb-3">Book residential pools only on WaterRnR</h1>
+          <h1 class="h3 mb-3">BOOK
+                  <div id="typed-strings" class="typed-color">
+                    <p>SWIMMING</p>
+                    <p>NATURAL</p>
+                    <p><span style="text-decoration: underline">PRIVATE</span></p>
+                  </div>
+                  <span id="typed"></span> only on WaterRnR !!</h1>
             <%= simple_form_for :search, url: pools_path, method: :get do |f| %>
               <div class="search-form-control form-group">
                 <input class="form-control string required" type="text" name="search[query]" id="search_query" />
                 <button name="button" type="submit" class="btn btn-flat">
                   <i class="fas fa-search"></i> Search
                 </button>
+              </div>
+              <div>
+                   <div id="typed-strings" class="typed-color">
+                    <p>RENT A HOUSE...?</p>
+                    <p>RENT A VILLA...?</p>
+                    <p>RENT AN <span style="text-decoration: underline">SWIMMING POOL</span></p>
+                  </div>
+                  <span id="typed"></span>
               </div>
               <div id="carouselExampleSlidesOnly" class="carousel slide" data-ride="carousel">
                 <div class="carousel-inner">
@@ -32,3 +46,32 @@
     </div>
   </div>
 </div>
+ -->
+
+<div class="home-page-container">
+  <div class="banner">
+    <div class="banner-content">
+      <div>
+        <h1>BOOK A PRIVATE POOL FOR</h1>
+      </div>
+        <div id="typed-strings" class="typed-color">
+          <p>SWIMMING...?</p>
+          <p>RELAXING...?</p>
+          <p><span style="text-decoration: underline">PARTYING !!</span></p>
+        </div>
+      <span id="typed"></span>
+      <div class="search-bar">
+        <%= form_tag pools_path, method: :get do %>
+          <%= text_field_tag :query,
+          params[:query],
+          class: "form_control form-search form-search-colour", id: "form-search-home",
+          placeholder: "Search for Pools..."
+          %>
+        <% end %>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+
