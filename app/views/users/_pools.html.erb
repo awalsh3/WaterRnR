@@ -1,0 +1,28 @@
+
+<div class="container">
+  <div class="show-booking-dashboard">
+    <h2> My pools </h2>
+    <% if @pools_user_own.any? %>
+      <div class="row">
+
+        <% @pools_user_own.each do |pool| %>
+        <div class="card p-3" id="card-booking">
+          <ul class="mr-3" style="list-style: none;">
+            <li class="images-dashboard"><%= cl_image_tag pool.photo, width: 200 %></li>
+            <li> <%= pool.title.capitalize %> </li>
+            <li> Description: <%= pool.description.capitalize %></li>
+            <li> Location: <%= pool.location %></li>
+            <li> Price: <%= pool.price %></li>
+
+            <div class="row justify-content-around mt-2">
+              <li><%= link_to "View pool", pool_path(pool.id), class: "btn btn-primary btn-sm mb-1" %></li>
+            </div>
+          </ul>
+      </div>
+        <% end %>
+          </div>
+    <% else %>
+      <p>You haven't added any pools yet!</p>
+    <% end %>
+  </div>
+</div>

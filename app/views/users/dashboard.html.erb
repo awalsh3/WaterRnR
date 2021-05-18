@@ -1,0 +1,8 @@
+<div class="container mt-5">
+
+  <% if current_user.business %>
+      <%= render "bookings" %>
+      <%= render "pools" %>
+    <% end %>
+    <%= render "reservations" %>
+  </div>
