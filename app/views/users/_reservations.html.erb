@@ -7,13 +7,13 @@
     <% @bookings_user_made.each do |booking| %>
       <div class="card p-3" id="card-booking">
           <ul style="list-style: none;">
-            <li> Booking total: $<%=booking.price %></li>
+            <li> Booking total: $<%=booking.pool.price %></li>
             <li> Booking date: <%=booking.date %></li>
             <li> Booking host: <%=booking.user.name %>
             <li> Booking pool: <%=booking.pool.title.capitalize %></li>
           </ul>
          <div class="row justify-content-around mt-1 mb-2">
-          <%= link_to "View", booking_path(booking.id), class: "btn btn-primary" %>
+
         </div>
         </div>
       <% end %>

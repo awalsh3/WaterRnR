@@ -7,8 +7,8 @@
     <div class="card p-3" id="card-booking">
       <ul data-booking-id="<%= booking.id %>" style="list-style: none;">
         <li> Guest name: <%=booking.user.name %></li>
-        <li> Pool name: <%=booking.pool.name %></li>
-        <li> Booking total: $<%=booking.price %></li>
+        <li> Pool name: <%=booking.pool.title %></li>
+        <li> Booking total: $<%=booking.pool.price %></li>
         <li> Booking date: <%=booking.date %></li>
       </ul>
     </div>

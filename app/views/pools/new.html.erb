@@ -4,6 +4,8 @@
   <h4> Host your own pool and make a splash with extra cash today!</h4>
 <div class=container-rental>
   <%= simple_form_for [ @pool ] do |f| %>
+    <%= f.input :title %>
+    <%= f.input :price %>
     <%= f.input :location %>
     <%= f.input :description %>
     <%= f.input :photo, as: :file %>
