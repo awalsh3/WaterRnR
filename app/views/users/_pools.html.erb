@@ -8,7 +8,13 @@
         <% @pools_user_own.each do |pool| %>
         <div class="card p-3" id="card-booking">
           <ul class="mr-3" style="list-style: none;">
-            <li class="images-dashboard"><%= cl_image_tag pool.photo, width: 200 %></li>
+            <li class="fi-card">
+                <% if pool.photo.attached? %>
+                  <%= link_to cl_image_tag(pool.photo.key), pool_path(pool.id) %>
+                  <% else %>
+                    <img src="https://res.cloudinary.com/dkgzrlgdu/image/upload/v1621195184/hme6aurdauxn0v9dp76jzeo1cy0n.jpg" class="fi-card fi-image card-text fi-text-js text-center" alt="">
+                <% end  %>
+              </li>
             <li> <%= pool.title %> </li>
             <li> Description: <%= pool.description %></li>
             <li> Location: <%= pool.location %></li>
@@ -26,3 +32,5 @@
     <% end %>
   </div>
 </div>
+
+
