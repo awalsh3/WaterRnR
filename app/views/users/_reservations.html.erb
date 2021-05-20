@@ -1,0 +1,26 @@
+<div class="container">
+  <div class="show-booking-dashboard">
+    <h2> Pools you are visiting </h2>
+    <% if @bookings_user_made.any? %>
+      <div class="row">
+
+    <% @bookings_user_made.each do |booking| %>
+      <div class="card p-3" id="card-booking">
+          <ul style="list-style: none;">
+            <li> Booking total: $<%=booking.pool.price %></li>
+            <li> Booking date: <%=booking.date %></li>
+            <li> Booking host: <%=booking.pool.user.name %>
+            <li> Booking pool: <%=booking.pool.title %></li>
+          </ul>
+         <div class="row justify-content-around mt-1 mb-2">
+
+        </div>
+        </div>
+      <% end %>
+        </div>
+
+    <% else %>
+      <p>You have no active or pending reservations currently</p>
+    <% end %>
+  </div>
+</div>

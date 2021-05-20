@@ -4,11 +4,14 @@
   <h4> Host your own pool and make a splash with extra cash today!</h4>
 <div class=container-rental>
   <%= simple_form_for [ @pool ] do |f| %>
+    <%= f.input :title %>
+    <%= f.input :price %>
     <%= f.input :location %>
     <%= f.input :description %>
     <%= f.input :photo, as: :file %>
     <%= f.submit "Create", class: "btn btn-primary" %>
 
   <% end %>
+    <%= link_to "Go back to the pool list without saving", pools_path %>
 </div>
 </div>

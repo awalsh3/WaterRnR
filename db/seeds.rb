@@ -68,7 +68,6 @@ pool1 = Pool.create!(
   user: user1,
   price: "145",
   title: "Attractive pool in Burbank Heat",
-  # photo: 'https://images.unsplash.com/photo-1576336463225-18df4bee0e38?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=967&q=80'
 )
 require "open-uri"
 file = URI.open('https://res.cloudinary.com/dkgzrlgdu/image/upload/v1621539597/pool1_ccoltw.jpg')
@@ -82,7 +81,6 @@ pool2 = Pool.create!(
   user: user1,
   price: "150",
   title: "Private Oasis Among the Trees",
-  # photo: 'https://images.unsplash.com/photo-1580794825872-339aa2de9558?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=668&q=80'
 )
 require "open-uri"
 file = URI.open('https://res.cloudinary.com/dkgzrlgdu/image/upload/v1621539753/pool2_hxuon0.jpg')
@@ -203,7 +201,7 @@ booking2 = Booking.create!(
 )
 
 booking3 = Booking.create!(
-  user: user3,
+  user: user1,
   pool: pool3,
   date: '2021-05-24 11:30:00',
   confirmed: false
