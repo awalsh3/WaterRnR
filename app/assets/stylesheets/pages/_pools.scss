@@ -1,0 +1,32 @@
+.pool-row {
+  display: flex;
+}
+
+.pool-description {
+  flex: 2;
+  margin: 30px;
+  justify-content: center;
+
+}
+
+.pool-photo {
+  display: flex;
+  flex: 2;
+  align-items: center;
+  justify-content: center;
+}
+
+
+.title {
+  margin: 30px;
+  text-align: center;
+}
+
+.listing-title {
+  margin: 50px;
+}
+
+.image-of-pool{
+  box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px;
+  border-radius: 8px;
+}
