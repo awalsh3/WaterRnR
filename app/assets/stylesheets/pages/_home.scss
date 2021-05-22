@@ -8,7 +8,7 @@
 @import url('https://fonts.googleapis.com/css?family=Roboto+Slab|Work+Sans:400,500');
 
 body {
-  background-color: #fff;
+  background-color: #faf8f2;
 }
 
 
@@ -100,7 +100,7 @@ img {
 
 
 body {
-    background-color: #fff;
+    background-color: #faf8f2;
     margin: 0;
     font-family: "Poppins","Helvetica","sans-serif";
     font-size: 1rem;
@@ -108,7 +108,6 @@ body {
     line-height: 1.5;
     color: #white;
     text-align: left;
-    background-color: #F4F4F4;
 }
 
 .form-search {
@@ -226,13 +225,17 @@ body {
 }
 
 .footer {
-  background: #0D0D0E;
+  background: white;
   display: flex;
   align-items: center;
   justify-content: space-between;
-  height: 50px;
-  padding: 0px 50px;
-  color: white;
+  color: gray;
+  position: fixed;
+  padding: 10px 10px 0px 10px;
+  bottom: 0;
+  width: 100%;
+  height: 40px;
+
 }
 .footer-links {
   display: flex;
