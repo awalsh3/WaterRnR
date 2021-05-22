@@ -12,10 +12,10 @@
                 <% end  %>
               </li>
             <li class="list-group-item"> Name: <%= pool.title %> </li>
-            <div class="row justify-content-around mt-2">
-              <li><%= link_to "View pool details", pool_path(pool.id), class: "btn btn-outline-secondary btn-sm mb-1" %></li>
-            </div>
+            <li class="row justify-content-around mt-2"><%= link_to "View pool details", pool_path(pool.id), class: "btn btn-outline-secondary btn-sm mb-1" %></li>
+              <br>
           </ul>
+          <br>
         <% end %>
     <% else %>
       <p>You haven't added any pools yet!</p>
