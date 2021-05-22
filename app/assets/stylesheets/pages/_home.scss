@@ -8,13 +8,7 @@
 @import url('https://fonts.googleapis.com/css?family=Roboto+Slab|Work+Sans:400,500');
 
 body {
-  background-color: #F2F2F2;
-}
-
-.pools-index img:hover{
-   box-shadow: 0 0px 55px rgba(0, 0, 0, 0.4);
-   transform: translate(0px, -20px) scale(1.03);
-   z-index: 0;
+  background-color: #fff;
 }
 
 
@@ -23,6 +17,7 @@ body {
   width: 400;
   crop: fill;
 }
+
 
 .home-page-container {
   max-width: 100%;
@@ -57,13 +52,6 @@ body {
   z-index: -1;
 }
 
-.fi-image img:hover {
-  // transition: all 0.5s ease;
-  box-shadow: 0 0px 55px rgba(0, 0, 0, 0.4);
-  transform: translate(0px, -20px) scale(1.03);
-  z-index: 0;
-}
-
 .fi-text-js {
   opacity: 0;
 }
@@ -72,17 +60,6 @@ body {
   opacity: 1;
 }
 
-.fi-text-js {
-  margin-top: -190px;
-  z-index: 3;
-  position: relative;
-  background: linear-gradient(180deg, rgba(255,255,255,0) 0%, rgba(0,0,0,0.7903536414565826) 87%);
-  color: white;
-  width: 408px;
-  padding-bottom: 60px;
-  padding-top: 80px;
-  border-radius: 5px;
-}
 
 .fi-card {
   display: flex;
@@ -105,7 +82,7 @@ body {
 }
 
 #typed {
-    font-family: "Montserrat", 'sans-serif';
+    font-family:"Poppins","Helvetica","sans-serif";
     font-style: normal;
     font-weight: bolder;
     font-size: 35px;
@@ -125,7 +102,7 @@ img {
 body {
     background-color: #fff;
     margin: 0;
-    font-family: "Work Sans", "Helvetica", "sans-serif";
+    font-family: "Poppins","Helvetica","sans-serif";
     font-size: 1rem;
     font-weight: 400;
     line-height: 1.5;
@@ -139,7 +116,7 @@ body {
     padding: 12px 205px 12px 16px;
     background-color: transparent;
     font-style: italic;
-    font-family: "Libre Franklin", "sans-serif";
+    font-family: "Poppins","Helvetica","sans-serif";
     letter-spacing: 2px;
     margin-right: -6px;
     border-top-left-radius: 5px;
@@ -268,7 +245,7 @@ body {
   padding: 0px 10px;
   font-size: 15px;
 }
-.footer-links a:hover {
+.footer-links {
   opacity: 1;
 }
 
