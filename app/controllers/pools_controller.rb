@@ -27,6 +27,6 @@ class PoolsController < ApplicationController
   private
 
   def pool_params
-    params.require(:pool).permit(:location, :description, :photo)
+    params.require(:pool).permit(:location, :description, :photo, :title)
   end
 end
