@@ -1,33 +1,31 @@
-
-<div class="container-listing">
-  <div class="row listing-content">
-    <!-- Details box -->
-    <div class="listing col-md-8">
-      <div class="listing-title">
-
-        <h3>Location: <%= @pool.location %>
-      </div><br>
-
-      <div class="listing-details">
-        <div class="row-content">
-          <div class="col-xs-3">
-            <p><strong>Highlights</strong></p>
-          </div>
-
-          <div class="col-xs-3">
-              <%= @pool.description %>
-              <br>
-              <br>
-              <p> Hosted by: <%= @pool.user.name %> </p>
-          </div>
-          <hr></hr>
-          <div class="col-xs-3">
-              <p> This pool is available on this day/time: </p>
-              <%= render 'bookings/form', pool: @pool, booking: @booking %>
-          </div>
+<div class="container">
+  <div class="listing-title">
+    <div class="title">
+      <h3> <%= @pool.title %> located in <%= @pool.location %></h3>
+      <p> This pool is hosted by <%= @pool.user.name %> from £<%= @pool.price %> per day.</p>
+    </div>
+    <div class="pool-row">
+      <div class="pool-description">
+        <h5><strong>Description</strong> </h5>
+        <%= @pool.description %><br>
+        <br>
+        <div class="pool-form">
+          <br>
+            <p> Please choose the day(s) you would like to book <%= @pool.user.name %>'s pool.
+            </p>
+          <p><strong>Remember to select an arrival time so <%= @pool.user.name %> can greet you.</strong></p>
+          <%= render 'bookings/form', pool: @pool, booking: @booking %>
         </div>
-        <br><br>
       </div>
+      <div class="pool-photo">
+        <div class="image-of-pool">
+          <% if @pool.photo.attached? %>
+        <%= link_to cl_image_tag(@pool.photo.key), pool_path(@pool.id) %>
+        <% else %>
+          <img src="https://res.cloudinary.com/dkgzrlgdu/image/upload/v1621195184/hme6aurdauxn0v9dp76jzeo1cy0n.jpg" class="fi-card fi-image card-text fi-text-js text-center" alt="">
+        <% end  %>
+        </div>
+      </div>
+    </div>
   </div>
-</div>
 </div>
