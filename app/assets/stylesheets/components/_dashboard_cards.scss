@@ -1,11 +1,6 @@
-// Import page-specific CSS files here.
-@import "home";
-
-.cards {
-  display: grid;
-  grid-template-columns: 1fr 1fr 1fr;
-  grid-gap: 32px;
-  text-align: center;
+.cards-dashboard {
+  display: flex;
+  text-align: left;
   img {
       max-width: 100%;
       box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
@@ -42,10 +37,4 @@
     grid-template-columns: 1fr 1fr 1fr;
   }
 }
-
-
-
-
-
-
 
