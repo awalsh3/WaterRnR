@@ -227,6 +227,7 @@ body {
 .footer {
   background: white;
   display: flex;
+  z-index: 5;
   align-items: center;
   justify-content: space-between;
   color: gray;
