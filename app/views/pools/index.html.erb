@@ -1,30 +1,23 @@
-<div class="pools-index">
-  <div class="container">
-    <div class="cards">
-      <% @pools.each do |pool| %>
-        <%= link_to pool_path(pool.id) do %>
-          <div class="fi-card">
-            <div class="fi-image">
-              <% if pool.photo.attached? %>
-                <%= cl_image_tag pool.photo.key, width: 400, height: 250, crop: :fill %>
-              <% else %>
-                <img src="https://res.cloudinary.com/dkgzrlgdu/image/upload/v1621195184/hme6aurdauxn0v9dp76jzeo1cy0n.jpg" class="fi-card fi-image card-text fi-text-js text-center" alt="">
-              <% end  %>
-            </div>
-            <div class="fi-text">
-              <h2 class="fi-text-js text-center"><%= pool.location %></h2>
-              <h3 class="fi-text-js text-center"><%= pool.description %></h3>
-            </div>
+<div class="container-pool">
+  <div class="cards">
+    <% @pools.each do |pool| %>
+      <%= link_to pool_path(pool.id) do %>
+        <div class="fi-card">
+          <div class="fi-image">
+            <% if pool.photo.attached? %>
+              <%= cl_image_tag pool.photo.key, width: 400, height: 250, crop: :fill %>
+            <% else %>
+              <img src="https://res.cloudinary.com/dkgzrlgdu/image/upload/v1621195184/hme6aurdauxn0v9dp76jzeo1cy0n.jpg" class="fi-card fi-image card-text fi-text-js text-center" alt="">
+            <% end  %>
           </div>
-        <% end %>
-        <!--             <strong class="card-text fi-text-js text-center"><%= pool.location %></strong> -->
+          <div class="fi-text">
+            <h2 class="fi-text-js text-center"><%= pool.location %></h2>
+            <h3 class="fi-text-js text-center"><%= pool.description %></h3>
+          </div>
+        </div>
       <% end %>
-     </div>
-  </div>
+      <!--             <strong class="card-text fi-text-js text-center"><%= pool.location %></strong> -->
+    <% end %>
+   </div>
 </div>
-
-
-
-
-
 
