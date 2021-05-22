@@ -1,15 +1,14 @@
-<div class="container">
- <div class="show-booking-dashboard">
-  <h2> Who is visiting your pool </h2>
+<div class="card" style="width: 30rem;">
+ <div class="card-body">
+  <h2 class="card-title"> Who is visiting your pool </h2>
   <% if @bookings_user_received.any? %>
-  <div class="row">
     <% @bookings_user_received.each do |booking| %>
     <div class="card p-3" id="card-booking">
-      <ul data-booking-id="<%= booking.id %>" style="list-style: none;">
-        <li> Guest name: <%=booking.user.name %></li>
-        <li> Pool name: <%=booking.pool.title %></li>
-        <li> Booking total: $<%=booking.pool.price %></li>
-        <li> Booking date: <%=booking.date %></li>
+      <ul class="list-group list-group-flush" data-booking-id="<%= booking.id %>" style="list-style: none;">
+        <li class="list-group-item"> Guest name: <%=booking.user.name %></li>
+        <li class="list-group-item"> Pool name: <%=booking.pool.title %></li>
+        <li class="list-group-item"> Booking total: $<%=booking.pool.price %></li>
+        <li class="list-group-item"> Booking date: <%=booking.date %></li>
       </ul>
     </div>
     <% end %>
