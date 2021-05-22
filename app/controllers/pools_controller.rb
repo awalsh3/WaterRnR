@@ -2,7 +2,7 @@ class PoolsController < ApplicationController
   skip_before_action :authenticate_user!, only: [:index, :show]
 
   def index
-    @pools = Pool.all
+    @pools = Pool.all.order("created_at DESC")
   end
 
   def show
